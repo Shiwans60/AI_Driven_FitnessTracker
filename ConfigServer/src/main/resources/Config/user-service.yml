@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/Fitness_userdb
     username: postgres
-    password: 230525
+    password: <Password>
   jpa:
     hibernate:
       ddl-auto: update
