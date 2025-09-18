@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://shiwansait:Shiwans525@cluster0.tdga3ht.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      uri: mongodb+srv://<UserName>:<Password>@cluster0.tdga3ht.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
       database: fitnessdb
   rabbitmq:
     host: localhost
