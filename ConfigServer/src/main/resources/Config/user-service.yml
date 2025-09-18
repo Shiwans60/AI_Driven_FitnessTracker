@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Fitness_userdb
+    username: postgres
+    password: 230525
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8081
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

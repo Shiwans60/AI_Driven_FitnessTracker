@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/Users/**
+        - id: activity-service
+          uri: lb://activity-service
+          predicates:
+            - Path=/activities/**
+        - id: aiservice
+          uri: lb://aiservice
+          predicates:
+            - Path=/recommendations/**
+server:
+  port: 8080
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
